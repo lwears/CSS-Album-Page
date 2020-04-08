@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial' ;
+  }
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+header > h2 {
+    font-weight: 400;
+    margin: 10px;
+}
+
+header > p {
+    font-weight: 300;
+}
+
+.songs {
+    background-color: lightyellow;
+    display: grid;
+    display: -ms-grid;
+    width: 100%;
+}
+
+.song {
+    display: grid;
+    display: -ms-grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.song > p {
+    padding: 0 3%;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.albumfooter {
+    grid-row: 3;
+    
+}
+
+.view {
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+    width: 50px;
+}
+
+.buy {
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+    width: 50px;
+}
+
+.mins {
+    margin: auto;
+    width: 50px;
+    justify-self: center;
+}
+
+.price {
+    float: right;
+    margin: auto;
+    width: 50px;
+    justify-self: center;
+}
+
+@media screen and (min-width : 600px) {
+
+    header {
+        width: 75%;
+        text-align: center;
+        margin: auto;
+    }
+
+    header > h2 {
+        font-weight: 500;
+        margin: 10px;
+    }
+
+    header > p {
+        margin-bottom: 40px;
+        font-size: large;
+    }
+
+    .songs {
+        background-color: lightyellow;
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .song {
+        margin: 20px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        border-radius: 3px;    
+    }
+
+    .song > p {
+        font-size: 1.5;
+    }
+
+}
+
+@media screen and (min-width : 801px) {
+
+    header {
+        width: 75%;
+        text-align: center;
+        margin: auto;
+    }
+
+    header > h2 {
+        font-weight: 500;
+        margin: 10px;
+    }
+
+    header > p {
+        margin-bottom: 40px;
+        font-size: large;
+    }
+
+    .songs {
+        background-color: lightyellow;
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .song {
+        margin: 20px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        border-radius: 3px;    
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    header {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+
+    header > h2 {
+        font-size: xx-large;
+        margin: 10px;
+    }
+
+    header > p {
+        margin-bottom: 50px;
+        font-size: large;
+    }
+
+    .songs {
+        background-color: lightyellow;
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .song {
+        margin: 6%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        border-radius: 3px;    
+    }
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+@media (min-width:320px) {  }
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
